@@ -1,0 +1,10 @@
+version: '2'
+services:
+  spring-boot-helloworld:
+    image: thienlelong/spring-boot-helloworld
+    stdin_open: true
+    tty: true
+    ports:
+    - 8888:8080/tcp
+    labels:
+      io.rancher.container.pull_image: always
