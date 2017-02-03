@@ -5,7 +5,7 @@
 
 	<groupId>com.agilityio</groupId>
 	<artifactId>spring-boot-helloworld</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>hello-world</name>
@@ -53,7 +53,7 @@
         <groupId>com.spotify</groupId>
         <artifactId>docker-maven-plugin</artifactId>
         <configuration>
-            <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+            <imageName>${docker.image.prefix}/${project.artifactId}:${project.version}</imageName>
             <dockerDirectory>src/main/docker</dockerDirectory>
             <resources>
                 <resource>
